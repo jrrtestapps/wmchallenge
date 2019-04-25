@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessCell" customModule="WeedmapsChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="QWg-NT-WQo" id="c7s-iZ-NQ4"/>
+                <outlet property="label" destination="jX6-EP-bNL" id="zkR-cA-qNJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BusinessCell" id="Dza-KO-lnQ" customClass="BusinessCell" customModule="WeedmapsChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QWg-NT-WQo">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="103"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="This label should dynamically size the cell height to be able to fit up to 3 lines of text!!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX6-EP-bNL">
+                        <rect key="frame" x="0.0" y="111" width="140" height="61"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="jX6-EP-bNL" firstAttribute="top" secondItem="QWg-NT-WQo" secondAttribute="bottom" constant="8" id="2v1-Bx-wDZ"/>
+                <constraint firstAttribute="trailing" secondItem="jX6-EP-bNL" secondAttribute="trailing" id="C03-vP-4CR"/>
+                <constraint firstAttribute="trailing" secondItem="QWg-NT-WQo" secondAttribute="trailing" id="Dca-Qs-0bZ"/>
+                <constraint firstItem="jX6-EP-bNL" firstAttribute="leading" secondItem="Dza-KO-lnQ" secondAttribute="leading" id="Ehk-iC-ogU"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jX6-EP-bNL" secondAttribute="bottom" constant="8" id="HMZ-VP-Lay"/>
+                <constraint firstItem="QWg-NT-WQo" firstAttribute="leading" secondItem="Dza-KO-lnQ" secondAttribute="leading" id="Zbv-hG-wye"/>
+                <constraint firstItem="QWg-NT-WQo" firstAttribute="top" secondItem="Dza-KO-lnQ" secondAttribute="top" id="uft-eI-pY7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="2TO-Pi-HIN"/>
+            <size key="customSize" width="184" height="209"/>
+            <point key="canvasLocation" x="76.799999999999997" y="24.287856071964018"/>
+        </collectionViewCell>
+    </objects>
+</document>

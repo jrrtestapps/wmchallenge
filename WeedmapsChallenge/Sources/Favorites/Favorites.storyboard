@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m7V-bW-YWA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nf1-6Y-2Ip">
+            <objects>
+                <navigationController id="m7V-bW-YWA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="KzR-zg-bS8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4jX-Ad-uKg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xwX-iP-dns" kind="relationship" relationship="rootViewController" id="gpN-Sw-dQ6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8u-NM-JRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-658" y="220"/>
+        </scene>
+        <!--Favorites View Controller-->
+        <scene sceneID="SG0-Lg-gUD">
+            <objects>
+                <viewController id="xwX-iP-dns" customClass="FavoritesViewController" customModule="WeedmapsChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QQt-Ws-tkN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbV-Nb-Ymc">
+                                <rect key="frame" x="153" y="330.5" width="69" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="Favorites Title Label"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RbV-Nb-Ymc" firstAttribute="centerX" secondItem="u6N-JD-9si" secondAttribute="centerX" id="RNh-I6-Xls"/>
+                            <constraint firstItem="RbV-Nb-Ymc" firstAttribute="centerY" secondItem="u6N-JD-9si" secondAttribute="centerY" id="TMc-H9-Ydi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u6N-JD-9si"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tJL-Ub-Yl9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eap-Jt-9Op" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="220"/>
+        </scene>
+    </scenes>
+</document>
