@@ -9,8 +9,6 @@
 import XCTest
 @testable import WeedmapsChallenge
 import RxSwift
-import RxBlocking
-import RxTest
 
 class MockHomeViewModelDelegate: HomeViewModelDelegate {
   func homeViewModel(_ source: HomeViewModel, openBusinessInApp businessViewModel: BusinessViewModel) {}
